@@ -1,35 +1,22 @@
-# Use the Python 3.11 slim base image
-FROM python:3.11-slim
+# Dockerfile.nginx
 
-# Environment settings
-ENV PYTHONUNBUFFERED 1
-ENV PYTHONDONTWRITEBYTECODE 1
+# Stage 1: Build the React app
+FROM node:20-alpine AS build
 
-# Create app directory
-RUN mkdir /app
 WORKDIR /app
+COPY . /app
 
-# Add system-level dependencies (including gcc and npm)
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-       libpq-dev gcc g++ make libffi-dev build-essential \
-       curl nodejs npm \
-    && rm -rf /var/lib/apt/lists/*
+RUN yarn
+RUN yarn build
 
-# Copy only requirements.txt to leverage Docker cache
-COPY ./requirements.txt /app/requirements.txt
+# Stage 2: Set up Nginx to serve the built app
+FROM nginx:alpine
 
-# Install Python dependencies from requirements.txt and cache the layer
-RUN pip install --no-cache-dir -r /app/requirements.txt
+COPY --from=build /app/build /usr/share/nginx/html
 
-# Copy the rest of the application code
-ADD . /app
+RUN rm /etc/nginx/conf.d/default.conf
+COPY spotnet.conf /etc/nginx/conf.d
 
-# Install StarknetKit via npm with legacy-peer-deps flag
-RUN npm install @argent/get-starknet --legacy-peer-deps --save
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
 
-# Expose port 8000 for FastAPI
-EXPOSE 8000
-
-# Entry point script
-ENTRYPOINT ["bash", "/app/entrypoint.sh"]

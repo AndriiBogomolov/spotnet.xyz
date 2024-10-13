@@ -1,15 +1,70 @@
-What
+# Getting Started with Create React App
 
-The functionality allows users to leverage their positions on assets (e.g., ETH) by looping through lending protocols (ZkLend, Nostra) and automated market makers (AMMs). Users deposit collateral into a lending protocol, borrow stablecoins, trade on AMMs, and repeat this loop to increase their holdings. The process allows for up to 5x leverage, providing more utility and liquidity to the DeFi ecosystem. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Why 
+## Available Scripts
 
-The spot leveraging concept fills a gap in the Starknet ecosystem by enabling users to amplify their positions without the need for perpetual contracts. This improves liquidity and utility for decentralized finance (DeFi) platforms on Starknet, providing a tool that is currently unavailable but highly demanded by users and protocols like ZkLend and Nostra. It allows for stable, long-term leveraged positions at lower costs and risk, which are essential for users aiming to increase exposure without facing the volatility of perpetual contracts. 
+In the project directory, you can run:
 
-How
+### `npm start`
 
-1. Deposit Collateral: Users deposit assets (e.g., ETH) into a lending protocol like ZkLend or Nostra - interaction with a smart contract on Starknet 
-2. Borrow Stablecoins: Users borrow stablecoins (e.g., USDC) against their deposited collateral - The smart contract on Starknet allows users to borrow stablecoins
-3. Trading on AMMs: Borrowed stablecoins are swapped for more ETH or the initial asset via AMMs (Starknet-based).
-4. Re-Deposit and Re-Borrow: The newly acquired ETH is re-deposited as additional collateral to borrow more stablecoins.
-5. Repeating the Loop: This loop repeats, increasing the user's leverage until they reach the desired level or the borrowing limit.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
