@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/spotnet.xyz/static/css/main.681bd6d6.css",
+    "main.js": "/spotnet.xyz/static/js/main.c5fe5a0c.js",
+    "static/media/deco.svg": "/spotnet.xyz/static/media/deco.952922fac798efeb5df6fd4e1b218da2.svg",
+    "static/media/starknet.svg": "/spotnet.xyz/static/media/starknet.78fd297b8b25937208cf40272629a1d1.svg",
+    "static/media/strk.svg": "/spotnet.xyz/static/media/strk.a58ae66cef862a30a4860128253e50f8.svg",
+    "static/media/zklend_logo.svg": "/spotnet.xyz/static/media/zklend_logo.65f408cd7a2bafe5597e2d2a28fae950.svg",
+    "static/media/ekubo_logo.svg": "/spotnet.xyz/static/media/ekubo_logo.9fa84b5e22dc30c900ccc53ff5d8a09e.svg",
+    "static/media/logo.svg": "/spotnet.xyz/static/media/logo.344d58ecf5e8b7c8b1737a73f47c78ab.svg",
+    "static/media/hand.svg": "/spotnet.xyz/static/media/hand.c3421fb14ec06888890767a0f6281284.svg",
+    "static/media/star.svg": "/spotnet.xyz/static/media/star.dd335013253c5f73b8c3d11f131c1f57.svg",
+    "static/media/repeats.svg": "/spotnet.xyz/static/media/repeats.a6dc04c4c2f9bea03b4823d370b01b1a.svg",
+    "static/media/borrow_usdc.svg": "/spotnet.xyz/static/media/borrow_usdc.58c6395c7798d87a5c9902197f912287.svg",
+    "static/media/rocket.svg": "/spotnet.xyz/static/media/rocket.7f9ca2dc257694fe61dd77ddcdb6a3d2.svg",
+    "static/media/borrow.svg": "/spotnet.xyz/static/media/borrow.1a425b9ca71b58b49cd4de5d4aa965b8.svg",
+    "static/media/collateral.svg": "/spotnet.xyz/static/media/collateral.90e3c707f58cd2e0f3e4f23b319e1eb5.svg",
+    "index.html": "/spotnet.xyz/index.html",
+    "static/media/ethereum.svg": "/spotnet.xyz/static/media/ethereum.d604cd4e442c0e0fafa98ac108519a96.svg",
+    "static/media/ekubo_swap.svg": "/spotnet.xyz/static/media/ekubo_swap.ffd990b4e97617814f0defcf1c8387f4.svg",
+    "static/media/zklend.svg": "/spotnet.xyz/static/media/zklend.1b8a4a150f61885aec523424d493260a.svg",
+    "static/media/usd_coin.svg": "/spotnet.xyz/static/media/usd_coin.db4db242a56b6a2751212a2ec74c8de5.svg",
+    "static/media/small_star.svg": "/spotnet.xyz/static/media/small_star.376609cc9a392710bcc0d39ddf7ad710.svg",
+    "main.681bd6d6.css.map": "/spotnet.xyz/static/css/main.681bd6d6.css.map",
+    "main.c5fe5a0c.js.map": "/spotnet.xyz/static/js/main.c5fe5a0c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.681bd6d6.css",
+    "static/js/main.c5fe5a0c.js"
+  ]
+}
