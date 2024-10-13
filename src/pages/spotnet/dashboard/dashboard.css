@@ -260,7 +260,7 @@ body {
 
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1440px) {
     .dashboard-container {
         margin-top: 2rem !important;
         margin-bottom: 6rem !important;
